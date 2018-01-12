@@ -4,5 +4,11 @@
       "schema": "OE1_CLNT_100",
       "object": "MARA"
     }
+  },
+  "TestGITTR.TestGITTRDB1::MARC": {
+    "target": {
+      "object": "MARC",
+      "schema": "OE1_CLNT_100"
+    }
   }
 }

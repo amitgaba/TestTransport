@@ -8,7 +8,14 @@
                     "privileges_with_grant_option": [
                         "SELECT"
                     ]
-                }      
+                },
+                {
+                    "name": "MARC",
+                    "schema": "OE1_CLNT_100",
+                    "privileges_with_grant_option": [
+                        "SELECT"
+                    ]
+                }                
             ]
         },
         "application_user": {
@@ -19,7 +26,14 @@
                         "SELECT"
                     ],
                     "schema": "OE1_CLNT_100"
-                }
+                },
+                {
+                    "name": "MARC",
+                    "privileges": [
+                        "SELECT"
+                    ],
+                    "schema": "OE1_CLNT_100"
+                }                
             ]
         }
     }
