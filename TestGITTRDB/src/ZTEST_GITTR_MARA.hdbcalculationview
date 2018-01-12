@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="TestGITTR.TestGITTRDB1::ZTEST_GITTR_MARA" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="ZTEST_GITTR_MARA"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="TestGITTR.TestGITTRDB1::MARA">
+    <resourceUri>TestGITTR.TestGITTRDB1::MARA</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="TestGITTR.TestGITTRDB1::MARA">
+  <attributes>
+    <attribute id="MATNR" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material Number"/>
+      <keyMapping columnObjectName="MARA" columnName="MATNR"/>
+    </attribute>
+    <attribute id="ERSDA" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Created On"/>
+      <keyMapping columnObjectName="MARA" columnName="ERSDA"/>
+    </attribute>
+    <attribute id="ERNAM" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Name of Person who Created the Object"/>
+      <keyMapping columnObjectName="MARA" columnName="ERNAM"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
