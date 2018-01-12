@@ -9,7 +9,10 @@ modules:
    path: TestGITTRDB
    requires:
     - name: hdi_TestGITTRDB
-
+      properties:
+        TARGET_CONTAINER: '~{hdi-container-name}'
+    - name: synonym-grantor-service
+      
 resources:
  - name: hdi_TestGITTRDB
    parameters:
@@ -18,3 +21,7 @@ resources:
    properties:
       hdi-container-name: ${service-name}
    type: com.sap.xs.hdi-container
+ - name: synonym-grantor-service
+   type: org.cloudfoundry.existing-service
+   parameters:
+      service-name: synonym-grantor-service

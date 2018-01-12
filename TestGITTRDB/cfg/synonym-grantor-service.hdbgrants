@@ -1,0 +1,26 @@
+{
+    "synonym-grantor-service": {
+        "object_owner": {
+            "object_privileges": [
+                {
+                    "name": "MARA",
+                    "schema": "OE1_CLNT_100",
+                    "privileges_with_grant_option": [
+                        "SELECT"
+                    ]
+                }      
+            ]
+        },
+        "application_user": {
+            "object_privileges": [
+                {
+                    "name": "MARA",
+                    "privileges": [
+                        "SELECT"
+                    ],
+                    "schema": "OE1_CLNT_100"
+                }
+            ]
+        }
+    }
+}
