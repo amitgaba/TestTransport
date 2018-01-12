@@ -1,0 +1,20 @@
+ID: TestGITTR
+_schema-version: '2.0'
+description: TestGITTR
+version: 0.0.1
+
+modules:
+ - name: TestGITTRDB
+   type: hdb
+   path: TestGITTRDB
+   requires:
+    - name: hdi_TestGITTRDB
+
+resources:
+ - name: hdi_TestGITTRDB
+   parameters:
+      config:
+         schema: TestGITTRDB1
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
