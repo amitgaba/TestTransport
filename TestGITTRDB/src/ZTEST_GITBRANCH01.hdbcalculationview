@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="TestGITTR.TestGITTRDB1::ZTEST_GITBRANCH01" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="ZTEST_GITBRANCH01"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="TestGITTR.TestGITTRDB1::MARC">
+    <resourceUri>TestGITTR.TestGITTRDB1::MARC</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="TestGITTR.TestGITTRDB1::MARC">
+  <attributes>
+    <attribute id="MATNR" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Material Number"/>
+      <keyMapping columnObjectName="MARC" columnName="MATNR"/>
+    </attribute>
+    <attribute id="WERKS" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Plant"/>
+      <keyMapping columnObjectName="MARC" columnName="WERKS"/>
+    </attribute>
+    <attribute id="PSTAT" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Maintenance status"/>
+      <keyMapping columnObjectName="MARC" columnName="PSTAT"/>
+    </attribute>
+    <attribute id="LVORM" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Flag Material for Deletion at Plant Level"/>
+      <keyMapping columnObjectName="MARC" columnName="LVORM"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

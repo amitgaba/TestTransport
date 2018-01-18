@@ -1,0 +1,5 @@
+namespace TestGITTR.TestGITTRDB1;
+
+@OData.publish : true
+context ZTEST_MARA {
+};
